@@ -9,3 +9,5 @@
 - Nextcloud in der Cloud aufsetzen (Web + DB separat)
 - Installation via Skript automatisieren
 - Projekt und Tests in Markdown dokumentieren
+
+test
