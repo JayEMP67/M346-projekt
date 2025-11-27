@@ -60,6 +60,14 @@
 
 ## 4. Tests
 ### Testfälle
+| Test-ID | Beschreibung                     | Erwartung                               | Ergebnis | Datum | Tester |
+|---------|----------------------------------|-------------------------------------------|----------|-------|--------|
+| T1      | `install-db.sh` ausführen        | DB + User + PW werden erstellt            | OK       | ...   | B      |
+| T2      | `install-nextcloud-web.sh` ausführen | Nextcloud-Installer erscheint            | OK       | ...   | A      |
+| T3      | Installer mit DB-Daten ausfüllen | Nextcloud installiert sich                | OK       | ...   | A      |
+| T4      | Login mit Admin                  | Dashboard lädt                            | OK       | ...   | A      |
+| T5      | MySQL Workbench auf DB verbinden | Tabellen sichtbar                          | OK       | ...   | B/C    |
+
 ### Screenshots
 
 ## 5. Zusammenarbeit & Git
