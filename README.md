@@ -41,6 +41,41 @@
    - [Person B](#person-b)
    - [Person C](#person-c)
 
+# Nextcloud-Projekt – Modul 346
+
+## 1. Einleitung
+### Ziel des Projekts
+### Kurzbeschreibung von Nextcloud
+### Team & Rollen
+
+## 2. Architektur
+### Beschreibung: Webserver + DB-Server
+### kleine Skizze
+
+## 3. Installation / Inbetriebnahme
+### Voraussetzungen
+### Ausführen von `install-db.sh`
+### Ausführen von `install-nextcloud-web.sh`
+### Wo finde ich die IP / wie rufe ich die URL auf
+
+## 4. Tests
+### Testfälle
+### Screenshots
+
+## 5. Zusammenarbeit & Git
+### Rollen
+### Commit-Strategie
+### Kurze Beschreibung der Zusammenarbeit
+
+## 6. Reflexion
+### Person A
+### Person B
+### Person C
+
+## 7. Quellen
+### Links zu Nextcloud, MySQL, Tutorials
+
+
 7. [Quellen](#7-quellen)
    - [Links](#links-zu-nextcloud-mysql-tutorials)
 
