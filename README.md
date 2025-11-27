@@ -1,2 +1,11 @@
-# M346-projekt
-Schulprojekt Modul 346 Von Jayden Martinez, Eymen Sarikaya, Julian Kedmenec
+# Projekt Modul 346 – Nextcloud
+
+## Team
+- Eymen – Webserver & Nextcloud
+- Jayden – Datenbankserver
+- Julian – IaC & Dokumentation
+
+## Ziele
+- Nextcloud in der Cloud aufsetzen (Web + DB separat)
+- Installation via Skript automatisieren
+- Projekt und Tests in Markdown dokumentieren
