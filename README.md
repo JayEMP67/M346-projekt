@@ -111,13 +111,3 @@ Eine wichtige Erkenntnis war, dass die Konfiguration der Datenbankzugriffsrechte
 Meine Aufgabe war es, die Dokumentation des Projekts zu erstellen und beim Debuggen der Skripte zu helfen. Ich sorgte dafür, dass alle Schritte des Projekts klar und nachvollziehbar beschrieben wurden. Zudem unterstützte ich bei der Fehlerbehebung, insbesondere bei der Konfiguration der Datenbankverbindung und der AWS Instanzen.
 
 Im Rückblick würde ich die Testfälle noch stärker in die Dokumentation integrieren, um die Nachvollziehbarkeit zu verbessern. Zudem wäre es hilfreich, die Skripte mit detaillierteren Kommentaren und einer besseren Fehlerbehandlung auszustatten, um die Nutzung und das Troubleshooting zu erleichtern.
-
-## 7. Quellen
-### Links zu Nextcloud, MySQL, Tutorials
-
-
-7. [Quellen](#7-quellen)
-   - [Links](#links-zu-nextcloud-mysql-tutorials)
-
-## 7. Quellen
-- Links zu Nextcloud, MySQL, Tutorials
