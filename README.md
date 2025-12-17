@@ -97,9 +97,20 @@ Das Team arbeitete eng zusammen, indem Aufgaben in kleinere Teile zerlegt und pa
 und regelmäßige Meetings halfen dabei, den Fortschritt zu überprüfen und Probleme zu lösen.
 
 ## 6. Reflexion
-### Person A
-### Person B
-### Person C
+### Eymen
+Das Projekt war eine großartige Gelegenheit, Nextcloud auf einer Cloud-Infrastruktur zu implementieren und mit AWS zu arbeiten. Besonders spannend war es, die Architektur mit einem separaten Web- und Datenbankserver zu entwerfen, was für Skalierbarkeit und Sicherheit wichtig ist. Ich hatte die Verantwortung für den Webserver und die Konfiguration von Nextcloud. Dabei stieß ich auf einige Herausforderungen, insbesondere bei der Integration der MariaDB-Datenbank mit Nextcloud und der Netzwerkkonfiguration in AWS. Es war nicht immer sofort klar, welche Sicherheitsgruppen und IP-Konfigurationen optimal sind.
+
+Im Rückblick würde ich beim nächsten Mal sicherstellen, dass die Server-Initialisierung parallel erfolgt, anstatt auf eine Instanz zu warten, um Zeit zu sparen. Zudem könnte man die Konfiguration von Nextcloud besser automatisieren und auf Fehlermeldungen besser reagieren, falls etwas während der Installation schiefgeht.
+
+### Jayden
+Als Verantwortlicher für den Datenbankserver war meine Aufgabe, die MariaDB-Datenbank auf dem DB-Server zu installieren und richtig zu konfigurieren. Dies war zunächst eine Herausforderung, da die Datenbankverbindung zwischen dem Webserver und dem DB-Server sicher und stabil eingerichtet werden musste. Ein Problem war, dass AWS Instanzen mit internen IPs arbeiten und diese korrekt konfiguriert werden müssen, was manchmal zu Verwirrung führte. Besonders als die Verbindung zwischen Webserver und DB-Server nicht sofort funktionierte, verbrachte ich etwas Zeit mit der Überprüfung der Netzwerkrouten und der Sicherheitsgruppen.
+
+Eine wichtige Erkenntnis war, dass die Konfiguration der Datenbankzugriffsrechte und die Firewall sehr genau geprüft werden müssen, um Kommunikationsprobleme zu vermeiden. In Zukunft würde ich diese Prozesse weiter automatisieren und mehr Protokolle verwenden, um eventuelle Fehlerquellen schnell zu identifizieren.
+
+### Julian
+Meine Aufgabe war es, die Dokumentation des Projekts zu erstellen und beim Debuggen der Skripte zu helfen. Ich sorgte dafür, dass alle Schritte des Projekts klar und nachvollziehbar beschrieben wurden. Zudem unterstützte ich bei der Fehlerbehebung, insbesondere bei der Konfiguration der Datenbankverbindung und der AWS Instanzen.
+
+Im Rückblick würde ich die Testfälle noch stärker in die Dokumentation integrieren, um die Nachvollziehbarkeit zu verbessern. Zudem wäre es hilfreich, die Skripte mit detaillierteren Kommentaren und einer besseren Fehlerbehandlung auszustatten, um die Nutzung und das Troubleshooting zu erleichtern.
 
 ## 7. Quellen
 ### Links zu Nextcloud, MySQL, Tutorials
