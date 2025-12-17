@@ -234,7 +234,11 @@ Feature Branches: Wir hatten zwar Branches aber wir haben sie nicht benutzt und 
 Das Team arbeitete eng zusammen, indem Aufgaben in kleinere Teile zerlegt und parallel bearbeitet wurden. Git und GitHub wurden als Versionierungssystem verwendet,
 und regelmäßige Meetings halfen dabei, den Fortschritt zu überprüfen und Probleme zu lösen.
 
-## 6. Reflexion
+## 6. Schwierigkeiten
+
+Während der Umsetzung des Projekts traten erhebliche Schwierigkeiten bei der Ausführung des Skripts auf, die eine erfolgreiche Bereitstellung der Nextcloud-Umgebung verhinderten. Ein zentrales Hindernis war der Prozessschritt zur Initialisierung der Datenbank-Instanz, bei dem das Skript regelmässig ohne erkennbaren Fortschritt stoppte. Dies führte dazu, dass die notwendige Infrastruktur für die Datenspeicherung nicht aufgebaut werden konnte und der gesamte Installationsvorgang frühzeitig zum Erliegen kam. Selbst in den Fällen, in denen das Deployment scheinbar abgeschlossen wurde, trat ein weiteres kritisches Problem auf, da die Nextcloud-Webseite im Browser nicht geladen werden konnte. Trotz der aktiven Instanzen in der AWS-Konsole blieb der Zugriff auf die Benutzeroberfläche verwehrt, wodurch das System für den Endnutzer nicht erreichbar war. Insgesamt erwies sich das man auch einigermassen schlau promten muss, anschliessend funktionierte es aber auch.
+
+## 7. Reflexion
 ### Eymen
 Das Projekt war eine großartige Gelegenheit, Nextcloud auf einer Cloud-Infrastruktur zu implementieren und mit AWS zu arbeiten. Besonders spannend war es, die Architektur mit einem separaten Web- und Datenbankserver zu entwerfen, was für Skalierbarkeit und Sicherheit wichtig ist. Ich hatte die Verantwortung für den Webserver und die Konfiguration von Nextcloud. Dabei stiess ich auf einige Herausforderungen, insbesondere bei der Integration der MariaDB-Datenbank mit Nextcloud und der Netzwerkkonfiguration in AWS. Es war nicht immer sofort klar, welche Sicherheitsgruppen und IP-Konfigurationen optimal sind.
 
