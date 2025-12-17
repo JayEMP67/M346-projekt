@@ -198,26 +198,26 @@ Nachdem Sie die Daten eingegeben und auf „Installation abschliessen“ geklick
 
 ### Screenshots
 
-## T1
+### T1
 
 <img width="793" height="974" alt="image" src="https://github.com/user-attachments/assets/9aa1ea6d-d38e-437c-9174-295a22ed5673" />
 
-## T2
+### T2
 
 <img width="2251" height="1127" alt="image" src="https://github.com/user-attachments/assets/836d1b21-029a-478d-8b46-f87e397d015c" />
 
-## T3
+### T3
 
 <img width="1923" height="1020" alt="image" src="https://github.com/user-attachments/assets/cdfff8a4-8e69-40d2-aa91-f1e61616f483" />
 
 
-## T4
+### T4
 
 <img width="800" height="569" alt="image" src="https://github.com/user-attachments/assets/bed01807-2aa8-44d6-a0f0-a1692bbc1c5a" />
 
 <img width="1768" height="819" alt="image" src="https://github.com/user-attachments/assets/27f06736-c258-4916-91cf-059a08a4ff22" />
 
-## T5
+### T5
 
 <img width="2260" height="999" alt="image" src="https://github.com/user-attachments/assets/453e7b68-54ea-478e-a76f-79677881232b" />
 
