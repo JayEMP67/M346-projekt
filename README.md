@@ -68,9 +68,99 @@ Die Kommunikation zwischen dem Webserver und dem Datenbankserver erfolgt über i
 
 ## 3. Installation / Inbetriebnahme
 ### Voraussetzungen
-### Ausführen von `install-db.sh`
-### Ausführen von `install-nextcloud-web.sh`
-### Wo finde ich die IP / wie rufe ich die URL auf
+| Anforderung | Zweck Installation / Download |
+|-------------|-------------------------------|
+| AWS-Konto	Erforderlich, um die Cloud-Ressourcen zu erstellen. |	Auf der AWS-Website registrieren: https://www.awsacademy.com/login?ec=302&startURL=%2F |
+| AWS CLI Das Befehlszeilentool, das es dem Skript ermöglicht, mit Ihrem AWS-Konto zu kommunizieren und Ressourcen zu erstellen. | Über den offiziellen AWS-Installer installieren: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html |
+| Terminal-Umgebung (Git Bash) Erforderlich, um das .sh-Shell-Skript auf Windows auszuführen. Linux- und macOS-Nutzer können das Standard-Terminal verwenden.| Windows-Nutzer Git Bash herunterladen und installieren: https://git-scm.com/install/windows |
+
+### 🔧 Schritt 1: Tools installieren und konfigurieren
+#### 1.1 Git Bash installieren (Nur Windows)
+Führen Sie den Installer (Siehe Screenshot) aus und folgen Sie den Anweisungen. Die Standardeinstellungen sind in der Regel ausreichend.
+<img width="1122" height="216" alt="image" src="https://github.com/user-attachments/assets/24d3a6d8-be6c-41cd-b5cc-71936894698d" />
+Nach der Installation können Sie mit Git Bish in windows Suche eingeben es öffnen (Siehe Screenshot)
+<img width="775" height="728" alt="image" src="https://github.com/user-attachments/assets/4e6e136d-f8da-409d-8d72-3d0985541dcd" />
+Terminal Sieht dann etwa so aus:
+<img width="574" height="366" alt="image" src="https://github.com/user-attachments/assets/a76ca031-9abd-4652-88dc-fc445d891b95" />
+
+#### 1.2 AWS CLI installieren und konfigurieren
+Installieren Sie die AWS CLI für Ihr Betriebssystem (Windows, macOS, Linux) per die anleitung (Siehe Screenshot).
+<img width="1542" height="823" alt="image" src="https://github.com/user-attachments/assets/98c6b101-f724-4658-a046-b5b969e018b1" />
+Öffnen Sie Ihr Terminal (Git Bash, macOS/Linux Terminal).
+Prüfen Sie, ob die AWS CLI korrekt installiert wurde:
+
+Version Finden:
+aws --version
+<img width="675" height="125" alt="image" src="https://github.com/user-attachments/assets/0e564674-87e0-4d0f-a43e-51b8e1e05cd6" />
+
+Aws Verbindung konfigurieren:
+aws configure
+<img width="1882" height="223" alt="image" src="https://github.com/user-attachments/assets/560d5809-fd72-4958-9077-f9f04868f06d" />
+
+AWS Access Key ID: Geben Sie Ihre AWS Access Key ID ein 
+AWS Secret Access Key: Geben Sie Ihren Secret Access Key ein.
+Default region name: Geben Sie die AWS-Region ein, in der die Server erstellt werden sollen (z.B. eu-central-1 für Frankfurt).
+Default output format: Geben Sie json ein.
+(Die Infos findet man unter AWS details: <img width="1839" height="998" alt="image" src="https://github.com/user-attachments/assets/b0b02169-a50c-46db-b0f1-6c3c6d8d1ba6" /> )
+
+###📂 Schritt 2: Dateien vorbereiten
+Speichern Sie alle drei Skripte im selben Ordner auf Ihrem lokalen Computer, z.B. in einem neuen Ordner namens nextcloud-deployment.
+deploy_aws.sh
+install_db.sh
+install_web.sh
+<img width="1917" height="357" alt="image" src="https://github.com/user-attachments/assets/df462d00-6bbb-41f3-bfd2-5cc1adff1307" />
+
+
+⚙️ Schritt 3: Skript ausführbar machen und starten
+Öffnen Sie Ihr Terminal (oder Git Bash auf Windows).
+Navigieren Sie zu dem Ordner, in dem Sie die Skripte gespeichert haben:
+
+cd /pfad/zu/ihrem/nextcloud-deployment Zum Beispiel ~/Downloads/Projekt
+<img width="589" height="289" alt="image" src="https://github.com/user-attachments/assets/38b2da11-f64a-4f81-a7fe-3154a438af39" />
+
+Recht zum Haupt-Deployment-Skript zum Ausführen geben mit:
+
+chmod +x deploy_aws.sh Zum Beispiel <img width="589" height="289" alt="image" src="https://github.com/user-attachments/assets/3b338f76-51c8-44af-83ef-54a4380a78ae" />
+
+
+Starten Sie das Deployment:
+
+./deploy_aws2.sh <img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/14844bbf-f327-4562-bb58-d16c1478a620" />
+
+### 👁️ Schritt 4: Deployment beobachten
+Das Skript führt nun folgende Aktionen in AWS aus:
+Erstellung eines SSH-Schlüsselpaares (NextcloudProjectKey.pem).
+
+
+Erstellung von Sicherheitsgruppen (Nextcloud-Web-SG, Nextcloud-DB-SG). Die Datenbank-SG lässt nur Verbindungen vom Webserver auf Port 3306 (MySQL) zu.
+<img width="793" height="117" alt="image" src="https://github.com/user-attachments/assets/d887eb75-4efa-4504-8854-2aa65838f862" />
+
+Start des Datenbank-Servers (Nextcloud-DB) und Ermittlung seiner privaten IP-Adresse.
+<img width="793" height="149" alt="image" src="https://github.com/user-attachments/assets/3cdfdcdd-a7fa-450d-a1ec-639fc7b4e397" />
+
+Injektion der Datenbank-IP in das Konfigurationsskript des Webservers.
+<img width="793" height="125" alt="image" src="https://github.com/user-attachments/assets/8edc1cf8-35f2-4e73-9305-653d5376bbf5" />
+
+Start des Web-Servers (Nextcloud-Web).
+<img width="793" height="128" alt="image" src="https://github.com/user-attachments/assets/95e7c77d-9bca-49b6-9ded-41e673951b3e" />
+
+Warten Sie, bis die öffentliche IP-Adresse am Ende angezeigt wird.
+<img width="793" height="107" alt="image" src="https://github.com/user-attachments/assets/0ba57469-ec84-4cdc-a77b-b6bf27d31170" />
+
+### 🌐 Schritt 5: Nextcloud-Installation abschließen
+Wartezeit: Warten Sie nach der Ausgabe der öffentlichen IP-Adresse noch etwa 2-3 Minuten, damit die automatischen Installationsskripte auf den Servern (MariaDB und Nextcloud) vollständig durchlaufen.
+Im Browser öffnen: Kopieren Sie die am Ende der Skriptausgabe angezeigte Webserver Public IP und geben Sie sie in Ihren Browser ein: http://[Ihre_Webserver_Public_IP]
+<img width="1040" height="225" alt="image" src="https://github.com/user-attachments/assets/dab6934d-28a7-4148-b167-2bf581813beb" />
+
+### Schritt 6: Auf Nextcloud zugreifen
+Sie sollten nun die Ersteinrichtungsseite von Nextcloud sehen.
+Administratorkonto erstellen: Geben Sie auf der Nextcloud-Seite den gewünschten Administrator-Benutzernamen und ein Passwort ein.
+Datenbank-Details eingeben: Wenn Nextcloud nach den Datenbankinformationen fragt, verwenden Sie die im Skript festgelegten Standardwerte:
+Datenbank-Benutzer: nextcloud_user
+Datenbank-Passwort: SecurePass2025!
+Datenbank-Name: nextcloud_db
+Der Datenbank-Host (die private IP-Adresse von Database) wird automatisch vom Skript bereitgestellt.
+Nachdem Sie die Daten eingegeben und auf „Installation abschliessen“ geklickt haben, sollte Ihre Nextcloud-Instanz einsatzbereit sein!
 
 ## 4. Tests
 ### Testfälle
