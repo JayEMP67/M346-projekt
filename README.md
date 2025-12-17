@@ -225,7 +225,7 @@ Nachdem Sie die Daten eingegeben und auf „Installation abschliessen“ geklick
 ### Commit-Strategie
 Im Git-Repository wurden folgende Regeln beachtet:
 
-Feature Branches: Wir hatten zwar Branches aber wir haben sie nicht benutzt und haben alles im Main Branch gemacwht.
+Feature Branches: Wir hatten zwar Branches aber wir haben sie nicht benutzt und haben alles im Main Branch gemacht.
 
 ### Kurze Beschreibung der Zusammenarbeit
 Das Team arbeitete eng zusammen, indem Aufgaben in kleinere Teile zerlegt und parallel bearbeitet wurden. Git und GitHub wurden als Versionierungssystem verwendet,
