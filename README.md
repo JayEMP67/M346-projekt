@@ -94,10 +94,12 @@ Prüfen Sie, ob die AWS CLI korrekt installiert wurde:
 
 Version Finden:
 aws --version
+
 <img width="675" height="125" alt="image" src="https://github.com/user-attachments/assets/0e564674-87e0-4d0f-a43e-51b8e1e05cd6" />
 
 Aws Verbindung konfigurieren:
 aws configure
+
 <img width="1882" height="223" alt="image" src="https://github.com/user-attachments/assets/560d5809-fd72-4958-9077-f9f04868f06d" />
 
 AWS Access Key ID: Geben Sie Ihre AWS Access Key ID ein 
