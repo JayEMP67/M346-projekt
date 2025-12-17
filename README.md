@@ -53,7 +53,7 @@ Nextcloud ist eine Open-Source-Plattform für Cloud-Speicher und Dateisynchronis
 Das Projekt wurde im Team durchgeführt. Die Aufgaben wurden wie folgt verteilt:
 - **Eymen**: Architekturplanung, Webserver-Implementierung und Nextcloud-Konfiguration
 - **Jayden**: Implementierung der Datenbankinfrastruktur und Skripte für die Datenbankbereitstellung
-- **Julian**: Dokumentation des Projekts, Tests und Implementierung von IaC (Infrastructure as Code)
+- **Julian**: Dokumentation des Projekts, Tests und Unterstützung beim Skript
 
 ## 2. Architektur
 
