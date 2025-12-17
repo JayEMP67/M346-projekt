@@ -114,6 +114,7 @@ Die Infos findet man unter AWS details: <img width="1839" height="998" alt="imag
 
 ### 📂 Schritt 2: Dateien vorbereiten
 Speichern Sie alle drei Skripte im selben Ordner auf Ihrem lokalen Computer, z.B. in einem neuen Ordner namens nextcloud-deployment.
+
 deploy_aws.sh
 
 install_db.sh
@@ -123,16 +124,19 @@ install_web.sh
 <img width="1917" height="357" alt="image" src="https://github.com/user-attachments/assets/df462d00-6bbb-41f3-bfd2-5cc1adff1307" />
 
 
-⚙️ Schritt 3: Skript ausführbar machen und starten
+### ⚙️ Schritt 3: Skript ausführbar machen und starten
 Öffnen Sie Ihr Terminal (oder Git Bash auf Windows).
 Navigieren Sie zu dem Ordner, in dem Sie die Skripte gespeichert haben:
 
 cd /pfad/zu/ihrem/nextcloud-deployment Zum Beispiel ~/Downloads/Projekt
+
 <img width="589" height="289" alt="image" src="https://github.com/user-attachments/assets/38b2da11-f64a-4f81-a7fe-3154a438af39" />
 
 Recht zum Haupt-Deployment-Skript zum Ausführen geben mit:
 
-chmod +x deploy_aws.sh Zum Beispiel <img width="589" height="289" alt="image" src="https://github.com/user-attachments/assets/3b338f76-51c8-44af-83ef-54a4380a78ae" />
+chmod +x deploy_aws.sh Zum Beispiel 
+
+<img width="589" height="289" alt="image" src="https://github.com/user-attachments/assets/3b338f76-51c8-44af-83ef-54a4380a78ae" />
 
 
 Starten Sie das Deployment:
@@ -145,23 +149,29 @@ Erstellung eines SSH-Schlüsselpaares (NextcloudProjectKey.pem).
 
 
 Erstellung von Sicherheitsgruppen (Nextcloud-Web-SG, Nextcloud-DB-SG). Die Datenbank-SG lässt nur Verbindungen vom Webserver auf Port 3306 (MySQL) zu.
+
 <img width="793" height="117" alt="image" src="https://github.com/user-attachments/assets/d887eb75-4efa-4504-8854-2aa65838f862" />
 
 Start des Datenbank-Servers (Nextcloud-DB) und Ermittlung seiner privaten IP-Adresse.
+
 <img width="793" height="149" alt="image" src="https://github.com/user-attachments/assets/3cdfdcdd-a7fa-450d-a1ec-639fc7b4e397" />
 
 Injektion der Datenbank-IP in das Konfigurationsskript des Webservers.
+
 <img width="793" height="125" alt="image" src="https://github.com/user-attachments/assets/8edc1cf8-35f2-4e73-9305-653d5376bbf5" />
 
 Start des Web-Servers (Nextcloud-Web).
+
 <img width="793" height="128" alt="image" src="https://github.com/user-attachments/assets/95e7c77d-9bca-49b6-9ded-41e673951b3e" />
 
 Warten Sie, bis die öffentliche IP-Adresse am Ende angezeigt wird.
+
 <img width="793" height="107" alt="image" src="https://github.com/user-attachments/assets/0ba57469-ec84-4cdc-a77b-b6bf27d31170" />
 
 ### 🌐 Schritt 5: Nextcloud-Installation abschließen
 Wartezeit: Warten Sie nach der Ausgabe der öffentlichen IP-Adresse noch etwa 2-3 Minuten, damit die automatischen Installationsskripte auf den Servern (MariaDB und Nextcloud) vollständig durchlaufen.
 Im Browser öffnen: Kopieren Sie die am Ende der Skriptausgabe angezeigte Webserver Public IP und geben Sie sie in Ihren Browser ein: http://[Ihre_Webserver_Public_IP]
+
 <img width="1040" height="225" alt="image" src="https://github.com/user-attachments/assets/dab6934d-28a7-4148-b167-2bf581813beb" />
 
 ### Schritt 6: Auf Nextcloud zugreifen
