@@ -49,7 +49,7 @@
 Das Ziel dieses Projekts war es, Nextcloud auf einer AWS-Infrastruktur bereitzustellen, wobei Webserver und Datenbankserver getrennt voneinander laufen. Dies sollte eine hohe Verfügbarkeit und Skalierbarkeit der Anwendung gewährleisten.
 
 ### Kurzbeschreibung von Nextcloud
-Nextcloud ist eine Open-Source-Plattform für Cloud-Speicher und Dateisynchronisation, die es Nutzern ermöglicht, ihre Daten in einer sicheren Umgebung zu speichern und über verschiedene Geräte zu synchronisieren. Es bietet eine Weboberfläche, mobile Apps und eine **starke Integration von Kollaborationswerkzeugen, die es Nutzern ermöglichen, Dokumente zu bearbeiten, Dateien zu teilen und gemeinsam zu arbeiten.
+Nextcloud ist eine Open-Source-Plattform für Cloud-Speicher und Dateisynchronisation, die es Nutzern ermöglicht, ihre Daten in einer sicheren Umgebung zu speichern und über verschiedene Geräte zu synchronisieren. Es bietet eine Weboberfläche, mobile Apps und eine starke Integration von Kollaborationswerkzeugen, die es Nutzern ermöglichen, Dokumente zu bearbeiten, Dateien zu teilen und gemeinsam zu arbeiten.
 
 ### Team & Rollen
 Das Projekt wurde im Team durchgeführt. Die Aufgaben wurden wie folgt verteilt:
