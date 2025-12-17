@@ -210,9 +210,7 @@ Nachdem Sie die Daten eingegeben und auf „Installation abschliessen“ geklick
 ### Commit-Strategie
 Im Git-Repository wurden folgende Regeln beachtet:
 
-Feature Branches: Jede neue Funktion oder jedes neue Skript wurde in einem eigenen Branch entwickelt.
-Pull Requests: Vor dem Mergen in den main-Branch mussten alle Änderungen durch das Team überprüft werden.
-Commit-Nachrichten: Alle Commit-Nachrichten wurden nach dem Format feat:<feature> oder fix:<bug> benannt.
+Feature Branches: Wir hatten zwar Branches aber wir haben sie nicht benutzt und haben alles im Main Branch gemacwht.
 
 ### Kurze Beschreibung der Zusammenarbeit
 Das Team arbeitete eng zusammen, indem Aufgaben in kleinere Teile zerlegt und parallel bearbeitet wurden. Git und GitHub wurden als Versionierungssystem verwendet,
