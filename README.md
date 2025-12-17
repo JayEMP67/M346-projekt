@@ -14,6 +14,7 @@
 
 1. [Einleitung](#1-einleitung)
    - [Ziel des Projekts](#ziel-des-projekts)
+Das Ziel dieses Projekts war es, Nextcloud auf einer AWS-Infrastruktur bereitzustellen, um eine skalierbare, sichere und performante Cloud-Speicherlösung zu ermöglichen. Die Implementierung sollte eine Trennung von Webserver und Datenbankserver ermöglichen, um eine effiziente Verwaltung und hohe Verfügbarkeit sicherzustellen.
    - [Kurzbeschreibung von Nextcloud](#kurzbeschreibung-von-nextcloud)
    - [Team & Rollen](#team--rollen)
 
