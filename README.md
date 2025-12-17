@@ -85,9 +85,16 @@ Die Kommunikation zwischen dem Webserver und dem Datenbankserver erfolgt über i
 ### Screenshots
 
 ## 5. Zusammenarbeit & Git
-### Rollen
 ### Commit-Strategie
+Im Git-Repository wurden folgende Regeln beachtet:
+
+Feature Branches: Jede neue Funktion oder jedes neue Skript wurde in einem eigenen Branch entwickelt.
+Pull Requests: Vor dem Mergen in den main-Branch mussten alle Änderungen durch das Team überprüft werden.
+Commit-Nachrichten: Alle Commit-Nachrichten wurden nach dem Format feat:<feature> oder fix:<bug> benannt.
+
 ### Kurze Beschreibung der Zusammenarbeit
+Das Team arbeitete eng zusammen, indem Aufgaben in kleinere Teile zerlegt und parallel bearbeitet wurden. Git und GitHub wurden als Versionierungssystem verwendet,
+und regelmäßige Meetings halfen dabei, den Fortschritt zu überprüfen und Probleme zu lösen.
 
 ## 6. Reflexion
 ### Person A
