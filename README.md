@@ -80,8 +80,8 @@ Führen Sie den Installer (Siehe Screenshot) aus und folgen Sie den Anweisungen.
 <img width="1122" height="216" alt="image" src="https://github.com/user-attachments/assets/24d3a6d8-be6c-41cd-b5cc-71936894698d" />
 Nach der Installation können Sie mit Git Bish in windows Suche eingeben es öffnen (Siehe Screenshot)
 <img width="775" height="728" alt="image" src="https://github.com/user-attachments/assets/4e6e136d-f8da-409d-8d72-3d0985541dcd" />
-
 Terminal Sieht dann etwa so aus:
+
 <img width="574" height="366" alt="image" src="https://github.com/user-attachments/assets/a76ca031-9abd-4652-88dc-fc445d891b95" />
 
 #### 1.2 AWS CLI installieren und konfigurieren
