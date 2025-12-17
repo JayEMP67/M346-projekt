@@ -26,8 +26,10 @@
 5. [Zusammenarbeit & Git](#5-zusammenarbeit--git)
    - [Commit-Strategie](#commit-strategie)
    - [Beschreibung der Zusammenarbeit](#kurze-beschreibung-der-zusammenarbeit)
+  
+6. [Schwierigkeiten](#6-Schwierigkeiten)
 
-6. [Reflexion](#6-reflexion)
+7. [Reflexion](#6-reflexion)
    - [Eymen](#Eymen)
    - [Jayden](#Jayden)
    - [Julian](#Julian)
