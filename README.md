@@ -20,11 +20,8 @@
 2. [Architektur](#2-architektur)
    - [Beschreibung: Webserver + DB-Server](#beschreibung-webserver--db-server)
 
-3. [Installation / Inbetriebnahme](#3-installation--inbetriebnahme)
+3. [Anleitung Installation](#3-Anleitung-Installation)
    - [Voraussetzungen](#voraussetzungen)
-   - [Ausführen von install-dbsh](#ausführen-von-install-dbsh)
-   - [Ausführen von install-nextcloud-websh](#ausführen-von-install-nextcloud-websh)
-   - [IP finden / URL aufrufen](#wo-finde-ich-die-ip--wie-rufe-ich-die-url-auf)
 
 4. [Tests](#4-tests)
    - [Testfälle](#testfälle)
