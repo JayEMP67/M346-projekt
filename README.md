@@ -17,6 +17,7 @@
 
 3. [Anleitung Installation](#3-Anleitung-Installation)
    - [Voraussetzungen](#voraussetzungen)
+   - [Schritt für Schritt Anleitung](#Schritt-für-Schritt-Anleitung)
 
 4. [Tests](#4-tests)
    - [Testfälle](#testfälle)
@@ -63,6 +64,8 @@ Die Kommunikation zwischen dem Webserver und dem Datenbankserver erfolgt über i
 | AWS-Konto	Erforderlich, um die Cloud-Ressourcen zu erstellen. |	Auf der AWS-Website registrieren: https://www.awsacademy.com/login?ec=302&startURL=%2F |
 | AWS CLI Das Befehlszeilentool, das es dem Skript ermöglicht, mit Ihrem AWS-Konto zu kommunizieren und Ressourcen zu erstellen. | Über den offiziellen AWS-Installer installieren: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html |
 | Terminal-Umgebung (Git Bash) Erforderlich, um das .sh-Shell-Skript auf Windows auszuführen. Linux- und macOS-Nutzer können das Standard-Terminal verwenden.| Windows-Nutzer Git Bash herunterladen und installieren: https://git-scm.com/install/windows |
+
+### Schritt für Schritt Anleitung
 
 ### 🔧 Schritt 1: Tools installieren und konfigurieren
 #### 1.1 Git Bash installieren (Nur Windows)
