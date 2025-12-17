@@ -76,9 +76,9 @@ Die Kommunikation zwischen dem Webserver und dem Datenbankserver erfolgt über i
 
 ### 🔧 Schritt 1: Tools installieren und konfigurieren
 #### 1.1 Git Bash installieren (Nur Windows)
-Führen Sie den Installer (Siehe Screenshot) aus und folgen Sie den Anweisungen. Die Standardeinstellungen sind in der Regel ausreichend.
+Führen Sie den Installer aus und folgen Sie den Anweisungen. Die Standardeinstellungen sind in der Regel ausreichend.
 <img width="1122" height="216" alt="image" src="https://github.com/user-attachments/assets/24d3a6d8-be6c-41cd-b5cc-71936894698d" />
-Nach der Installation können Sie mit Git Bish in windows Suche eingeben es öffnen (Siehe Screenshot)
+Nach der Installation können Sie mit Git Bish in windows Suche eingeben es öffnen
 <img width="775" height="728" alt="image" src="https://github.com/user-attachments/assets/4e6e136d-f8da-409d-8d72-3d0985541dcd" />
 
 Terminal Sieht dann etwa so aus:
@@ -86,7 +86,7 @@ Terminal Sieht dann etwa so aus:
 <img width="574" height="366" alt="image" src="https://github.com/user-attachments/assets/a76ca031-9abd-4652-88dc-fc445d891b95" />
 
 #### 1.2 AWS CLI installieren und konfigurieren
-Installieren Sie die AWS CLI für Ihr Betriebssystem (Windows, macOS, Linux) per die anleitung (Siehe Screenshot).
+Installieren Sie die AWS CLI für Ihr Betriebssystem (Windows, macOS, Linux) per die anleitung.
 <img width="1542" height="823" alt="image" src="https://github.com/user-attachments/assets/98c6b101-f724-4658-a046-b5b969e018b1" />
 
 Öffnen Sie Ihr Terminal (Git Bash, macOS/Linux Terminal).
@@ -103,8 +103,11 @@ aws configure
 <img width="1882" height="223" alt="image" src="https://github.com/user-attachments/assets/560d5809-fd72-4958-9077-f9f04868f06d" />
 
 AWS Access Key ID: Geben Sie Ihre AWS Access Key ID ein 
+
 AWS Secret Access Key: Geben Sie Ihren Secret Access Key ein.
+
 Default region name: Geben Sie die AWS-Region ein, in der die Server erstellt werden sollen (z.B. eu-central-1 für Frankfurt).
+
 Default output format: Geben Sie json ein.
 (Die Infos findet man unter AWS details: <img width="1839" height="998" alt="image" src="https://github.com/user-attachments/assets/b0b02169-a50c-46db-b0f1-6c3c6d8d1ba6" /> )
 
