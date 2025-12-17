@@ -112,11 +112,14 @@ Default output format: Geben Sie json ein.
 
 Die Infos findet man unter AWS details: <img width="1839" height="998" alt="image" src="https://github.com/user-attachments/assets/b0b02169-a50c-46db-b0f1-6c3c6d8d1ba6" /> 
 
-###📂 Schritt 2: Dateien vorbereiten
+### 📂 Schritt 2: Dateien vorbereiten
 Speichern Sie alle drei Skripte im selben Ordner auf Ihrem lokalen Computer, z.B. in einem neuen Ordner namens nextcloud-deployment.
 deploy_aws.sh
+
 install_db.sh
+
 install_web.sh
+
 <img width="1917" height="357" alt="image" src="https://github.com/user-attachments/assets/df462d00-6bbb-41f3-bfd2-5cc1adff1307" />
 
 
