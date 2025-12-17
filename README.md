@@ -109,7 +109,8 @@ AWS Secret Access Key: Geben Sie Ihren Secret Access Key ein.
 Default region name: Geben Sie die AWS-Region ein, in der die Server erstellt werden sollen (z.B. eu-central-1 für Frankfurt).
 
 Default output format: Geben Sie json ein.
-(Die Infos findet man unter AWS details: <img width="1839" height="998" alt="image" src="https://github.com/user-attachments/assets/b0b02169-a50c-46db-b0f1-6c3c6d8d1ba6" /> )
+
+Die Infos findet man unter AWS details: <img width="1839" height="998" alt="image" src="https://github.com/user-attachments/assets/b0b02169-a50c-46db-b0f1-6c3c6d8d1ba6" /> 
 
 ###📂 Schritt 2: Dateien vorbereiten
 Speichern Sie alle drei Skripte im selben Ordner auf Ihrem lokalen Computer, z.B. in einem neuen Ordner namens nextcloud-deployment.
