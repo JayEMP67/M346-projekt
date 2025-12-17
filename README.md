@@ -195,13 +195,30 @@ Nachdem Sie die Daten eingegeben und auf „Installation abschliessen“ geklick
 ### Testfälle
 | Test-ID | Beschreibung                     | Erwartung                               | Ergebnis | Datum | Tester |
 |---------|----------------------------------|-------------------------------------------|----------|-------|--------|
-| T1      | `install-db.sh` ausführen        | DB + User + PW werden erstellt            | OK       | ...   | Jayden     |
-| T2      | `install-nextcloud-web.sh` ausführen | Nextcloud-Installer erscheint            | OK       | ...   | Julian    |
-| T3      | Installer mit DB-Daten ausfüllen | Nextcloud installiert sich                | OK       | ...   | Eymen     |
-| T4      | Login mit Admin                  | Dashboard lädt                            | OK       | ...   | Eymen    |
-| T5      | MySQL Workbench auf DB verbinden | Tabellen sichtbar                          | OK       | ...   | Julian/Jayden|
+| T1      | "deploy_aws.sh" ausführen        | DB + Instanz + PW werden erstellt            | OK       | 14.12   | Jayden / Eymen     |
+| T2      | "EC2 Instanz wird erstellt       | EC2 Instanz wird erstellt                  | OK       | 14.12  | Eymen/Jayden  |
+| T3      | Nextcloud Seite erscheint        | Nextcloud ladet               | OK       | 14.12  | Eymen/ Julian    |
+| T4      | Login mit Datenbank              | Dashboard lädt                            | OK       | 14.12 | Eymen/ Julian   |
+| T5      | Security Groups erstellt         | Security Groups sichtbar                          | OK       | 14.12  | Julian/Jayden|
 
 ### Screenshots
+
+T1
+<img width="793" height="974" alt="image" src="https://github.com/user-attachments/assets/9aa1ea6d-d38e-437c-9174-295a22ed5673" />
+
+T2
+<img width="2251" height="1127" alt="image" src="https://github.com/user-attachments/assets/836d1b21-029a-478d-8b46-f87e397d015c" />
+
+T3
+<img width="1923" height="1020" alt="image" src="https://github.com/user-attachments/assets/cdfff8a4-8e69-40d2-aa91-f1e61616f483" />
+
+
+T4
+<img width="800" height="569" alt="image" src="https://github.com/user-attachments/assets/bed01807-2aa8-44d6-a0f0-a1692bbc1c5a" />
+<img width="1768" height="819" alt="image" src="https://github.com/user-attachments/assets/27f06736-c258-4916-91cf-059a08a4ff22" />
+
+T5
+<img width="2260" height="999" alt="image" src="https://github.com/user-attachments/assets/453e7b68-54ea-478e-a76f-79677881232b" />
 
 ## 5. Zusammenarbeit & Git
 ### Commit-Strategie
