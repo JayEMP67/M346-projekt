@@ -140,9 +140,9 @@ chmod +x deploy_aws.sh Zum Beispiel
 <img width="589" height="289" alt="image" src="https://github.com/user-attachments/assets/3b338f76-51c8-44af-83ef-54a4380a78ae" />
 
 
-Starten Sie das Deployment:
+Starten Sie das Deployment:./deploy_aws2.sh 
 
-./deploy_aws2.sh <img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/14844bbf-f327-4562-bb58-d16c1478a620" />
+<img width="800" height="210" alt="image" src="https://github.com/user-attachments/assets/14844bbf-f327-4562-bb58-d16c1478a620" />
 
 ### 👁️ Schritt 4: Deployment beobachten
 Das Skript führt nun folgende Aktionen in AWS aus:
