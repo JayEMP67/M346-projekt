@@ -126,6 +126,7 @@ install_web.sh
 
 ### ⚙️ Schritt 3: Skript ausführbar machen und starten
 Öffnen Sie Ihr Terminal (oder Git Bash auf Windows).
+
 Navigieren Sie zu dem Ordner, in dem Sie die Skripte gespeichert haben:
 
 cd /pfad/zu/ihrem/nextcloud-deployment Zum Beispiel ~/Downloads/Projekt
@@ -145,6 +146,7 @@ Starten Sie das Deployment:
 
 ### 👁️ Schritt 4: Deployment beobachten
 Das Skript führt nun folgende Aktionen in AWS aus:
+
 Erstellung eines SSH-Schlüsselpaares (NextcloudProjectKey.pem).
 
 
@@ -170,18 +172,26 @@ Warten Sie, bis die öffentliche IP-Adresse am Ende angezeigt wird.
 
 ### 🌐 Schritt 5: Nextcloud-Installation abschließen
 Wartezeit: Warten Sie nach der Ausgabe der öffentlichen IP-Adresse noch etwa 2-3 Minuten, damit die automatischen Installationsskripte auf den Servern (MariaDB und Nextcloud) vollständig durchlaufen.
+
 Im Browser öffnen: Kopieren Sie die am Ende der Skriptausgabe angezeigte Webserver Public IP und geben Sie sie in Ihren Browser ein: http://[Ihre_Webserver_Public_IP]
 
 <img width="1040" height="225" alt="image" src="https://github.com/user-attachments/assets/dab6934d-28a7-4148-b167-2bf581813beb" />
 
 ### Schritt 6: Auf Nextcloud zugreifen
 Sie sollten nun die Ersteinrichtungsseite von Nextcloud sehen.
+
 Administratorkonto erstellen: Geben Sie auf der Nextcloud-Seite den gewünschten Administrator-Benutzernamen und ein Passwort ein.
+
 Datenbank-Details eingeben: Wenn Nextcloud nach den Datenbankinformationen fragt, verwenden Sie die im Skript festgelegten Standardwerte:
+
 Datenbank-Benutzer: nextcloud_user
+
 Datenbank-Passwort: SecurePass2025!
+
 Datenbank-Name: nextcloud_db
+
 Der Datenbank-Host (die private IP-Adresse von Database) wird automatisch vom Skript bereitgestellt.
+
 Nachdem Sie die Daten eingegeben und auf „Installation abschliessen“ geklickt haben, sollte Ihre Nextcloud-Instanz einsatzbereit sein!
 
 ## 4. Tests
