@@ -19,7 +19,6 @@
 
 2. [Architektur](#2-architektur)
    - [Beschreibung: Webserver + DB-Server](#beschreibung-webserver--db-server)
-   - [kleine Skizze](#kleine-skizze)
 
 3. [Installation / Inbetriebnahme](#3-installation--inbetriebnahme)
    - [Voraussetzungen](#voraussetzungen)
@@ -32,14 +31,13 @@
    - [Screenshots](#screenshots)
 
 5. [Zusammenarbeit & Git](#5-zusammenarbeit--git)
-   - [Rollen](#rollen)
    - [Commit-Strategie](#commit-strategie)
    - [Beschreibung der Zusammenarbeit](#kurze-beschreibung-der-zusammenarbeit)
 
 6. [Reflexion](#6-reflexion)
-   - [Person A](#person-a)
-   - [Person B](#person-b)
-   - [Person C](#person-c)
+   - [Eymen](#Eymen)
+   - [Jayden](#Jayden)
+   - [Julian](#Julian)
 
 # Nextcloud-Projekt – Modul 346
 
