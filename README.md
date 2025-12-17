@@ -220,7 +220,7 @@ und regelmäßige Meetings halfen dabei, den Fortschritt zu überprüfen und Pro
 
 ## 6. Reflexion
 ### Eymen
-Das Projekt war eine großartige Gelegenheit, Nextcloud auf einer Cloud-Infrastruktur zu implementieren und mit AWS zu arbeiten. Besonders spannend war es, die Architektur mit einem separaten Web- und Datenbankserver zu entwerfen, was für Skalierbarkeit und Sicherheit wichtig ist. Ich hatte die Verantwortung für den Webserver und die Konfiguration von Nextcloud. Dabei stieß ich auf einige Herausforderungen, insbesondere bei der Integration der MariaDB-Datenbank mit Nextcloud und der Netzwerkkonfiguration in AWS. Es war nicht immer sofort klar, welche Sicherheitsgruppen und IP-Konfigurationen optimal sind.
+Das Projekt war eine großartige Gelegenheit, Nextcloud auf einer Cloud-Infrastruktur zu implementieren und mit AWS zu arbeiten. Besonders spannend war es, die Architektur mit einem separaten Web- und Datenbankserver zu entwerfen, was für Skalierbarkeit und Sicherheit wichtig ist. Ich hatte die Verantwortung für den Webserver und die Konfiguration von Nextcloud. Dabei stiess ich auf einige Herausforderungen, insbesondere bei der Integration der MariaDB-Datenbank mit Nextcloud und der Netzwerkkonfiguration in AWS. Es war nicht immer sofort klar, welche Sicherheitsgruppen und IP-Konfigurationen optimal sind.
 
 Im Rückblick würde ich beim nächsten Mal sicherstellen, dass die Server-Initialisierung parallel erfolgt, anstatt auf eine Instanz zu warten, um Zeit zu sparen. Zudem könnte man die Konfiguration von Nextcloud besser automatisieren und auf Fehlermeldungen besser reagieren, falls etwas während der Installation schiefgeht.
 
