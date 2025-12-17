@@ -114,6 +114,7 @@ Die Infos findet man unter AWS details: <img width="1839" height="998" alt="imag
 
 ### 📂 Schritt 2: Dateien vorbereiten
 Speichern Sie alle drei Skripte im selben Ordner auf Ihrem lokalen Computer, z.B. in einem neuen Ordner namens nextcloud-deployment.
+Die Skripts Findet sie unter ["/M346-projekt/Skripts"](/M346-projekt/Skripts)
 
 deploy_aws.sh
 
