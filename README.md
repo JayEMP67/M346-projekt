@@ -44,13 +44,27 @@
 # Nextcloud-Projekt – Modul 346
 
 ## 1. Einleitung
+
 ### Ziel des Projekts
+Das Ziel dieses Projekts war es, **Nextcloud auf einer AWS-Infrastruktur** bereitzustellen, wobei Webserver und Datenbankserver getrennt voneinander laufen. Dies sollte eine hohe Verfügbarkeit und Skalierbarkeit der Anwendung gewährleisten.
+
 ### Kurzbeschreibung von Nextcloud
+**Nextcloud** ist eine Open-Source-Plattform für **Cloud-Speicher** und **Dateisynchronisation**, die es Nutzern ermöglicht, ihre Daten in einer sicheren Umgebung zu speichern und über verschiedene Geräte zu synchronisieren. Es bietet eine **Weboberfläche**, mobile Apps und eine **starke Integration von Kollaborationswerkzeugen**, die es Nutzern ermöglichen, Dokumente zu bearbeiten, Dateien zu teilen und gemeinsam zu arbeiten.
+
 ### Team & Rollen
+Das Projekt wurde im Team durchgeführt. Die Aufgaben wurden wie folgt verteilt:
+- **Eymen**: Architekturplanung, Webserver-Implementierung und Nextcloud-Konfiguration
+- **Jayden**: Implementierung der Datenbankinfrastruktur und Skripte für die Datenbankbereitstellung
+- **Julian**: Dokumentation des Projekts, Tests und Implementierung von IaC (Infrastructure as Code)
 
 ## 2. Architektur
+
 ### Beschreibung: Webserver + DB-Server
-### kleine Skizze
+Die Architektur des Projekts umfasst zwei Hauptkomponenten:
+- **Webserver**: Der Webserver hostet die Nextcloud-Anwendung und ermöglicht Nutzern den Zugriff auf ihre Dateien und Daten. Er wird über **Apache** und **PHP** betrieben, mit einer Datenbankverbindung zu **MariaDB**.
+- **Datenbankserver**: Der DB-Server speichert alle Daten von Nextcloud, einschließlich Benutzerinformationen und Datei-Metadaten. Er wird mit **MariaDB** betrieben und ist über eine **private IP-Adresse** mit dem Webserver verbunden, um die Sicherheit der Kommunikation zu gewährleisten.
+
+Die Kommunikation zwischen dem Webserver und dem Datenbankserver erfolgt über interne Netzwerke innerhalb der AWS-Infrastruktur. Der Webserver ist öffentlich zugänglich, während der Datenbankserver in einer privaten Subnetz-Konfiguration betrieben wird, um die Sicherheit zu erhöhen.
 
 ## 3. Installation / Inbetriebnahme
 ### Voraussetzungen
