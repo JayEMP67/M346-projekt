@@ -55,7 +55,7 @@ Das Projekt wurde im Team durchgeführt. Die Aufgaben wurden wie folgt verteilt:
 ### Beschreibung: Webserver + DB-Server
 Die Architektur des Projekts umfasst zwei Hauptkomponenten:
 - **Webserver**: Der Webserver hostet die Nextcloud-Anwendung und ermöglicht Nutzern den Zugriff auf ihre Dateien und Daten. Er wird über Apache und PHP betrieben, mit einer Datenbankverbindung zu MariaDB.
-- **Datenbankserver**: Der DB-Server speichert alle Daten von Nextcloud, einschließlich Benutzerinformationen und Datei-Metadaten. Er wird mit MariaDB betrieben und ist über eine private IP-Adresse mit dem Webserver verbunden, um die Sicherheit der Kommunikation zu gewährleisten.
+- **Datenbankserver**: Der DB-Server speichert alle Daten von Nextcloud, einschliesslich Benutzerinformationen und Datei-Metadaten. Er wird mit MariaDB betrieben und ist über eine private IP-Adresse mit dem Webserver verbunden, um die Sicherheit der Kommunikation zu gewährleisten.
 
 Die Kommunikation zwischen dem Webserver und dem Datenbankserver erfolgt über interne Netzwerke innerhalb der AWS-Infrastruktur. Der Webserver ist öffentlich zugänglich, während der Datenbankserver in einer privaten Subnetz-Konfiguration betrieben wird, um die Sicherheit zu erhöhen.
 
@@ -167,7 +167,7 @@ Warten Sie, bis die öffentliche IP-Adresse am Ende angezeigt wird.
 
 <img width="793" height="107" alt="image" src="https://github.com/user-attachments/assets/0ba57469-ec84-4cdc-a77b-b6bf27d31170" />
 
-### 🌐 Schritt 5: Nextcloud-Installation abschließen
+### 🌐 Schritt 5: Nextcloud-Installation abschliessen
 Wartezeit: Warten Sie nach der Ausgabe der öffentlichen IP-Adresse noch etwa 2-3 Minuten, damit die automatischen Installationsskripte auf den Servern (MariaDB und Nextcloud) vollständig durchlaufen.
 
 Im Browser öffnen: Kopieren Sie die am Ende der Skriptausgabe angezeigte Webserver Public IP und geben Sie sie in Ihren Browser ein: http://[Ihre_Webserver_Public_IP]
@@ -234,7 +234,7 @@ Feature Branches: Wir hatten zwar Branches aber wir haben sie nicht benutzt und 
 
 ### Kurze Beschreibung der Zusammenarbeit
 Das Team arbeitete eng zusammen, indem Aufgaben in kleinere Teile zerlegt und parallel bearbeitet wurden. Git und GitHub wurden als Versionierungssystem verwendet,
-und regelmäßige Meetings halfen dabei, den Fortschritt zu überprüfen und Probleme zu lösen.
+und regelmässige Meetings halfen dabei, den Fortschritt zu überprüfen und Probleme zu lösen.
 
 ## 6. Schwierigkeiten
 
@@ -242,7 +242,7 @@ Während der Umsetzung des Projekts traten erhebliche Schwierigkeiten bei der Au
 
 ## 7. Reflexion
 ### Eymen
-Das Projekt war eine großartige Gelegenheit, Nextcloud auf einer Cloud-Infrastruktur zu implementieren und mit AWS zu arbeiten. Besonders spannend war es, die Architektur mit einem separaten Web- und Datenbankserver zu entwerfen, was für Skalierbarkeit und Sicherheit wichtig ist. Ich hatte die Verantwortung für den Webserver und die Konfiguration von Nextcloud. Dabei stiess ich auf einige Herausforderungen, insbesondere bei der Integration der MariaDB-Datenbank mit Nextcloud und der Netzwerkkonfiguration in AWS. Es war nicht immer sofort klar, welche Sicherheitsgruppen und IP-Konfigurationen optimal sind.
+Das Projekt war eine grossartige Gelegenheit, Nextcloud auf einer Cloud-Infrastruktur zu implementieren und mit AWS zu arbeiten. Besonders spannend war es, die Architektur mit einem separaten Web- und Datenbankserver zu entwerfen, was für Skalierbarkeit und Sicherheit wichtig ist. Ich hatte die Verantwortung für den Webserver und die Konfiguration von Nextcloud. Dabei stiess ich auf einige Herausforderungen, insbesondere bei der Integration der MariaDB-Datenbank mit Nextcloud und der Netzwerkkonfiguration in AWS. Es war nicht immer sofort klar, welche Sicherheitsgruppen und IP-Konfigurationen optimal sind.
 
 Im Rückblick würde ich beim nächsten Mal sicherstellen, dass die Server-Initialisierung parallel erfolgt, anstatt auf eine Instanz zu warten, um Zeit zu sparen. Zudem könnte man die Konfiguration von Nextcloud besser automatisieren und auf Fehlermeldungen besser reagieren, falls etwas während der Installation schiefgeht.
 
